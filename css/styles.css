@@ -54,6 +54,11 @@ body {
   justify-content: space-between;
 }
 
+.social-list-item {
+  width: 44px;
+  height: 44px;
+}
+
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
@@ -81,6 +86,8 @@ body {
   width: 20px;
   height: 20px;
 }
+
+/**========== Studio ==========**/
 
 /*======= Header ======*/
 
@@ -127,6 +134,9 @@ body {
 }
 
 .header-mail-ikon {
+  box-sizing: content-box;
+  padding-top: 34px;
+  padding-bottom: 34px;
   width: 16px;
   height: 12px;
 }
@@ -158,8 +168,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-tel-link:hover,
@@ -180,8 +188,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--subtitle-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-mail-link:hover,
@@ -199,8 +205,12 @@ body {
 }
 
 .header-tel-ikon {
+  box-sizing: content-box;
   width: 10px;
   height: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   margin-right: 10px;
 }
 
@@ -238,6 +248,8 @@ body {
 /*====== Hero ======*/
 
 .hero {
+  min-width: 1600px;
+  height: 600px;
   text-align: center;
   background: #c4c4c4;
   padding-top: 200px;
@@ -472,14 +484,6 @@ input[type="radio"].visually-hidden {
 .clients-item {
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.clients-item:hover,
-.clients-item:focus {
-  border-color: var(--accent-color);
 }
 
 .clients-link {
@@ -488,9 +492,15 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-
   border: 1px solid #afb1b8;
+
+  box-sizing: border-box;
   border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
 }
 
 .clients-ikon {
@@ -498,12 +508,12 @@ input[type="radio"].visually-hidden {
   height: 49px;
 }
 
-.clients-item .clients-ikon {
+.clients-link .clients-ikon {
   fill: #afb1b8;
 }
 
-.clients-item:hover .clients-ikon,
-.clients-item:focus .clients-ikon {
+.clients-link:hover .clients-ikon,
+.clients-link:focus .clients-ikon {
   fill: var(--accent-color);
 }
 
@@ -588,6 +598,11 @@ input[type="radio"].visually-hidden {
   fill: var(--white-color);
 }
 
+.footer-item-social {
+  width: 44px;
+  height: 44px;
+}
+
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
@@ -609,11 +624,9 @@ input[type="radio"].visually-hidden {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-link {
-}
-
 .footer-list-social {
   display: flex;
+  justify-content: space-between;
 }
 
 .contacts {
@@ -627,7 +640,9 @@ input[type="radio"].visually-hidden {
 
 /*====== Footer End ======*/
 
-/*========== Portfolio ==========*/
+/**========== Studio End ==========**/
+
+/**========== Portfolio ==========**/
 
 /*====== Main ======*/
 
@@ -681,9 +696,20 @@ input[type="radio"].visually-hidden {
   margin: 15px;
   width: 370px;
   height: 404px;
+}
 
-  background: var(--white-color);
+.features-list-link {
+  display: inline-block;
+
+  background: #ffffff;
   border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.features-list-item .features-list-link:hover,
+.features-list-item .features-list-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .features-list-title {
