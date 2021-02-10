@@ -248,7 +248,7 @@ body {
 /*====== Hero ======*/
 
 .hero {
-  min-width: 1600px;
+  width: 1600px;
   height: 600px;
   text-align: center;
   background: #c4c4c4;
@@ -261,6 +261,7 @@ body {
     url(../images/hero/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-subject {
